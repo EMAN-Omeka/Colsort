@@ -3,6 +3,12 @@ Ce plugin permet de gérer l'ordre des collection ; il utilise le classement
 Le classement des collections se fait sur une page spécifique du tableau de
 bord (tri-collection) en indiquant un chiffre pour chaque collection.
 
+Le classement des collections se fait sur une page spécifique du tableau de
+bord (tri-collection) en indiquant un chiffre pour chaque collection.
+
+L'affichage de la liste se fait sur une page "arbre-collections" qui permet
+aussi de visualiser les titres des notices de chaque collection.
+
 Ce plugin est expérimental et a été testé avec l'interface de la
 plate-forme EMAN. Tout retour est le bienvenu sur d'autres utilisations.
 

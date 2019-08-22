@@ -12,4 +12,5 @@ aussi de visualiser les titres des notices de chaque collection.
 Ce plugin est expérimental et a été testé avec l'interface de la
 plate-forme EMAN. Tout retour est le bienvenu sur d'autres utilisations.
 
-Plugin réalisé avec le soutien du projet ANR Transperse https://transperse.hypotheses.org
+Plugin réalisé avec le soutien du projet ANR Transperse https://transperse.hypotheses.org pour la plate-forme EMAN (Item, ENS-CNRS) par Vincent Buard [(Numerizen)](http://numerizen.com).
+

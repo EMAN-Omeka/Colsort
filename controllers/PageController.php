@@ -35,6 +35,7 @@ On affiche les collections d'abord dans l'ordre croissant des collections parent
       foreach ($collections as $i => $col) {
         $cid = metadata($col, 'id');
         $nom = metadata($col, array('Dublin Core', 'Title'));
+        $nom = "<a href='" . WEB_ROOT . "/collections/show/$cid'>$nom</a>";
         $query = "SELECT parent_collection_id FROM omeka_collection_trees WHERE collection_id = $cid";
         $db = get_db();
         $parentId = $db->query($query)->fetchAll();
@@ -47,7 +48,7 @@ On affiche les collections d'abord dans l'ordre croissant des collections parent
         }
          
        	if ($parentId <> 0) {
-         	$nom .= (" (enfant de <em>$parentName</em>)");
+         	$nom .= " (enfant de <em>$parentName</em>)";
        	}  else {
          	$nom = "<b>$nom</b>";
        	}      

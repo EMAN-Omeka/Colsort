@@ -1,5 +1,5 @@
 <?php
-  echo head(array('title' => 'Arbre des collections','bodyclass' => 'collections browse')); ?>
+  echo head(array('title' => 'Arborescence du corpus', 'bodyclass' => 'collections browse')); ?>
   
 <style>
 div.notices {
@@ -12,19 +12,21 @@ div.notices {
 .collection {
   font-weight : bold;
 }
+#titre-arbo {
+  font-weight: bold;
+}
 </style>
 <script>
   $ = jQuery;
   $(document).ready(function() {
     $('.montrer').click(function() {
-//       console.log('OK');  
-//       $(this).next('div').toggle();
-      $(this).parent().next('.notices').toggle();
+      $(this).parent().next('.notices, .collections').toggle();
     });
   });
 </script>
 
 <div id='collection-tree'>
-<?php  echo $content; ?>
+<h3 id="titre-arbo">Arborescence du corpus</h3>
+<?php  echo $tree; ?>
 </div>
 <?php echo foot(); ?>
